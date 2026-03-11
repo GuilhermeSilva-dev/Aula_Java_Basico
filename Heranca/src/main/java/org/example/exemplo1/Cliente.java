@@ -1,22 +1,21 @@
 package org.example.exemplo1;
 
 public class Cliente extends Pessoa {
-    private String dataCompra;
+    private String dataDeCompra;
     private String formaDePagamento;
 
-    public Cliente(String nome, int idade, String dataCompra, String formaDePagamento) {
+    public Cliente(String nome, int idade, String dataDeCompra, String formaDePagamento) {
         super(nome, idade);
-        this.dataCompra = dataCompra;
+        this.dataDeCompra = dataDeCompra;
         this.formaDePagamento = formaDePagamento;
     }
 
-
-    public String getDataCompra() {
-        return dataCompra;
+    public String getDataDeCompra() {
+        return dataDeCompra;
     }
 
-    public void setDataCompra(String dataCompra) {
-        this.dataCompra = dataCompra;
+    public void setDataDeCompra(String dataDeCompra) {
+        this.dataDeCompra = dataDeCompra;
     }
 
     public String getFormaDePagamento() {
@@ -30,7 +29,7 @@ public class Cliente extends Pessoa {
     @Override
     public String toString() {
         return "Cliente{" +
-                "dataCompra='" + dataCompra + '\'' +
+                "dataDeCompra='" + dataDeCompra + '\'' +
                 ", formaDePagamento='" + formaDePagamento + '\'' +
                 ", nome='" + nome + '\'' +
                 ", idade=" + idade +
